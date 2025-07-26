@@ -71,7 +71,6 @@ export const useRegisterForm = (): UseRegisterForm => {
         }
     };
 
-    // Password validation
     const passwordRequirementsMet =
         formData.password.length >= 8 &&
         /[A-Z]/.test(formData.password) &&

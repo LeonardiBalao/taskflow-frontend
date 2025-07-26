@@ -51,7 +51,7 @@ export const useLoginForm = (): UseLoginForm => {
                 throw new Error('Login failed');
 
             }
-            const json = await postRequest.json(); // On success, redirect or update app state
+            const json = await postRequest.json(); 
             console.log('Login successful:', json);
 
         } catch (error) {

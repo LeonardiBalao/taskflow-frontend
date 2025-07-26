@@ -54,18 +54,18 @@ const Home: FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-violet-50 to-violet-100">
       {/* Hero Section */}
       <section className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl text-center">
           <div className="mb-6 flex justify-center">
             <Badge variant="secondary" className="mb-4 px-4 py-2 text-sm">
-              🎉 New: AI-powered task suggestions now available!
+              🎉 Soon: AI-powered task suggestions now available!
             </Badge>
           </div>
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             Organize Your Life with{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
               Taskflow
             </span>
           </h1>
@@ -74,8 +74,8 @@ const Home: FC = () => {
             seamlessly. Stay organized, meet deadlines, and achieve your goals.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700">
-              Get Started Free
+            <Button size="lg" className="bg-violet-600 text-white hover:bg-violet-700">
+              Get Started
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50">
@@ -85,15 +85,15 @@ const Home: FC = () => {
           <div className="mt-8 flex justify-center items-center gap-6 text-sm text-gray-500">
             <span>✓ No credit card required</span>
             <Separator orientation="vertical" className="h-4" />
-            <span>✓ 14-day free trial</span>
+            <span>✓ Free to use</span>
             <Separator orientation="vertical" className="h-4" />
-            <span>✓ Cancel anytime</span>
+            <span>✓ Delete account at anytime</span>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
+      <section id="features" className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -109,7 +109,7 @@ const Home: FC = () => {
               return (
                 <Card key={index} className="border-0 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardHeader>
-                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600">
+                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-violet-600">
                       <Icon className="h-6 w-6 text-white" />
                     </div>
                     <div className="flex items-center gap-2 mb-2">
@@ -134,20 +134,20 @@ const Home: FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-blue-600 px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-violet-800 px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 text-center md:grid-cols-3">
             <div>
               <div className="text-4xl font-bold text-white">10,000+</div>
-              <div className="mt-2 text-blue-200">Active Users</div>
+              <div className="mt-2 text-violet-100">Active Users</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-white">1M+</div>
-              <div className="mt-2 text-blue-200">Tasks Completed</div>
+              <div className="text-4xl font-bold text-white">10,000+</div>
+              <div className="mt-2 text-violet-100">Tasks Completed</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-white">99.9%</div>
-              <div className="mt-2 text-blue-200">Uptime</div>
+              <div className="mt-2 text-violet-100">Uptime</div>
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@ const Home: FC = () => {
               What our users say
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Join thousands of satisfied users who trust Taskflow
+              Join thousands of satisfied users who trust Balão Taskflow
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -180,7 +180,7 @@ const Home: FC = () => {
                 <CardContent>
                   <div className="flex items-center gap-3">
                     <Avatar>
-                      <AvatarFallback className="bg-blue-600 text-white font-semibold">
+                      <AvatarFallback className="bg-violet-600 text-white font-semibold">
                         {testimonial.avatar}
                       </AvatarFallback>
                     </Avatar>
@@ -200,7 +200,7 @@ const Home: FC = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
+      <section id="pricing" className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -247,8 +247,8 @@ const Home: FC = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="border-2 border-blue-600 relative">
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600">
+                <Card className="border-2 border-violet-600 relative">
+                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-violet-600">
                     Most Popular
                   </Badge>
                   <CardHeader>
@@ -275,7 +275,7 @@ const Home: FC = () => {
                         <span>Priority support</span>
                       </div>
                     </div>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700">Start Free Trial</Button>
+                    <Button className="w-full bg-violet-600 hover:bg-violet-700">Start Free</Button>
                   </CardContent>
                 </Card>
                 
@@ -337,8 +337,8 @@ const Home: FC = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="border-2 border-blue-600 relative">
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600">
+                <Card className="border-2 border-violet-600 relative">
+                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-violet-600">
                     Most Popular
                   </Badge>
                   <CardHeader>
@@ -369,7 +369,7 @@ const Home: FC = () => {
                         <span>Priority support</span>
                       </div>
                     </div>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700">Start Free Trial</Button>
+                    <Button className="w-full bg-violet-600 hover:bg-violet-700">Start Free</Button>
                   </CardContent>
                 </Card>
                 
@@ -421,8 +421,8 @@ const Home: FC = () => {
             Start your journey to better productivity today. No credit card required.
           </p>
           <div className="mt-8">
-            <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700">
-              Start Free Trial
+            <Button size="lg" className="bg-violet-600 text-white hover:bg-violet-700">
+              Start Free
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>

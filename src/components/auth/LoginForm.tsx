@@ -23,7 +23,7 @@ const LoginForm: FC = () => {
       </CardHeader>
       <CardContent className="space-y-6">
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Email Field */}
+
           <FormField
             id="email"
             name="email"
@@ -36,7 +36,6 @@ const LoginForm: FC = () => {
             required
           />
 
-          {/* Password Field */}
           <PasswordInput
             id="password"
             name="password"
@@ -47,7 +46,6 @@ const LoginForm: FC = () => {
             required
           />
 
-          {/* Remember Me & Forgot Password */}
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <input
@@ -56,7 +54,7 @@ const LoginForm: FC = () => {
                 type="checkbox"
                 checked={formData.rememberMe}
                 onChange={handleInputChange}
-                className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                className="h-4 w-4 text-violet-600 border-gray-300 rounded focus:ring-violet-500"
               />
               <Label htmlFor="rememberMe" className="text-sm text-gray-600">
                 Remember me
@@ -70,7 +68,6 @@ const LoginForm: FC = () => {
             </Link>
           </div>
 
-          {/* Submit Button */}
           <Button 
             type="submit" 
             className="w-full bg-blue-600 hover:bg-blue-700 text-white"
@@ -84,7 +81,6 @@ const LoginForm: FC = () => {
 
         <SocialLogin type="login" />
 
-        {/* Sign Up Link */}
         <div className="text-center">
           <p className="text-sm text-gray-600">
             Don't have an account?{" "}
@@ -97,7 +93,6 @@ const LoginForm: FC = () => {
           </p>
         </div>
 
-        {/* Demo Badge */}
         <div className="text-center">
           <Badge variant="secondary" className="text-xs">
             🎉 Free 14-day trial • No credit card required
