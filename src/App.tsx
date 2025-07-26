@@ -1,15 +1,16 @@
-import './App.css'
-import { Button } from './components/ui/button'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import AboutPage from "./pages/About";
 
-function App() {
+const App: React.FC = () => (
+  <Router>
+    <nav>
+      <Link to="/">Home</Link> | <Link to="/about">About</Link>
+    </nav>
+    <Routes>
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
+  </Router>
+);
 
-  return (
-    <>
-      <div className="flex min-h-svh flex-col items-center justify-center">
-        <Button>Click me</Button>
-      </div>
-    </>
-  )
-}
-
-export default App
+export default App;
